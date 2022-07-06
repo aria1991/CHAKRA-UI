@@ -1,71 +1,81 @@
-## 20-06-2022
+## 06-07-2022
 
-`@chakra-ui/react@2.2.2`
+`@chakra-ui/react@2.2.3`
 
-- Remove internal usage of createBreakpoints function
+**Gatsby Starter Default** `v1.0.9`
 
-**Skeleton** `v2.0.7`
+- Tweak eslintrc
 
-- extend doc for `fadeDuration` prop
-- Remove internal usage of createBreakpoints function
+**Babel Plugin** `v1.0.4`
 
-**Color Mode** `v2.1.0`
+- Tweak eslintrc
 
-- Check if the MediaQueryList object supports the addEventListener() method, else
-  fallback to the legacy .addListener() method.
+**Cra Template** `v2.0.3`
 
-**Cli** `v2.1.1`
+- Tweak eslintrc
 
-- Add --no-format option
-- Fix issue where CLI crashed due to lodash throttle dependency
+**Image** `v2.0.4`
 
-**Toast** `v3.0.0`
+- add displayName to components using forwardRef
 
-- Move `@chakra-ui/system` to peer dependency
+**Modal** `v2.1.1`
 
-**System** `v2.2.0`
+- add displayName to components using forwardRef
 
-- Extract and export `getToken` function from `useToken`
-- Improve parameter types for `useToken`- Remove internal usage of createBreakpoints function
+**Popover** `v2.0.3`
 
-**Media Query** `v3.1.1`
+- add displayName to components using forwardRef
+- Do not open the popover with a mouse click if trigger is hover.
 
-- Remove internal usage of createBreakpoints function
+**Utils** `v2.0.3`
 
-**Styled System** `v2.2.1`
+- fix(utils): avoid TypeError in getCSSVar when theme is an empty object
+- Fix issue where get-focusables causes excessive repaint due to computed style
+  calls
 
-- Remove internal usage of createBreakpoints function
+**Chakra Nextjs Ts** `v2.0.9`
 
-**Theme** `v2.1.1`
+- Update dependencies
 
-- Remove internal usage of createBreakpoints function
+**Cli** `v2.1.2`
+
+- Update dependencies
+
+**Transition** `v2.0.3`
+
+- Transition: Fix emitted types that were incompatible with latest framer-motion
+  release
+
+**Theme** `v2.1.2`
+
 - Add border radius of zero to the default full size modal
 
-**Theme Tools** `v2.0.3`
+**React Env** `v2.0.3`
 
-- Remove internal usage of createBreakpoints function
+- Fix hydration issues when using Suspense
 
-**Layout** `v2.0.3`
+**Media Query** `v3.1.2`
 
-- SimpleGrid: Fix issue where `minChildWidth` doesn't work with size tokens
+- Fix hydration issues when using Suspense
 
-**Descendant** `v3.0.3`
+**Portal** `v2.0.3`
 
-- Apply type constraints to `useDescendants` hook for improved TypeScript 4.8 support
+- Fix hydration issues when using Suspense
 
-**Checkbox** `v2.1.1`
+**Layout** `v2.1.0`
 
-- fixed issue where switch cannot be toggled when text is selectedd
+- Add new highlight text component to emphasize any part of a string with the
+  `mark` tag.
 
-**Tooltip** `v2.0.3`
-
-- Avoid rendering multiple tooltips so that they are not appeared after opening a
-  modal
-
-**Radio** `v2.0.3`
-
-- Fix issue where radio doesn't show focus when interacting with keyboard
-
-**Modal** `v2.1.0`
-
-- Export `useDrawerContext` hook
+```jsx live=false
+<Text fontWeight="semibold">
+  <Highlight
+    query={['$48 per year ($4 per month)', '$5 per month', 'free']}
+    styles={{ px: '2', py: '1', rounded: 'full', bg: 'teal.100' }}
+  >
+    Cleanup.Picture is free unless you need better quality and process
+    hi-resolution images. The price is then $5 per month or $48 per year ($4 per
+    month) for processing images of any size.
+  </Highlight>
+</Text>
+```
